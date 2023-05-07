@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bruno Ace SC', cursive;
+    background-color: cornflowerblue;
+}
+
+#maindiv{
+    background-color: navy;
+}
+
+nav{
+    background-color: black;
+    color: gold;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 35px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#reset{
+    color: gold;
+    background-color: darkorange;
+    font-size: 25px;
+}
+.Container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+}
+
+.box{
+    border: 5px solid black;
+    font-size: 4vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(231, 220, 245);
+}
+
+nav ul:hover{
+    color: red;
+}
+
+#reset:hover{
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+.gameinfo h1:hover{
+    color: red;
+    font-weight: bold;
+}
+
+.gameinfo{
+    padding: 0 34px;
+}
+
+.imgbox img{
+    display: none;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #d2142a;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .Container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
