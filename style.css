@@ -119,3 +119,7 @@ nav ul:hover{
         grid-template-columns: repeat(3, 20vw);
     }
 }
+
+.info{
+    font-size: 30px;
+}
