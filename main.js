@@ -6,7 +6,6 @@ let board = [
 ];
 let gameActive = true;
 let gameover = new Audio("gameover.mp3");
-let music = new Audio("music.mp3");
 let audioturnmusic = new Audio("ting.mp3");
 
 function placeMark(row, col) {
@@ -98,11 +97,3 @@ document.querySelectorAll('.cell').forEach(cell => {
         }
     });
 });
-
-function stopmusic(){
-    music.pause();
-}
-
-function playmusic(){
-    music.play();
-}
