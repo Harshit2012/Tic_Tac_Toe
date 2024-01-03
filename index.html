@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="tic-tac-toe.png">
+</head>
+<body>
+    <div class="containe text-center">
+        <img id="logo" src="tic-tac-toe.png">
+        <h1 class="mt-2">Tic Tac Toe</h1>
+        <button id="restart-button" class="btn btn-primary col-3 mt-3 mx-auto" onclick="restartGame()">Restart Game</button>
+        <div id="game-container" class="mt-1">
+            <div class="row">
+                <div class="col-4 cell" onclick="placeMark(0, 0)"></div>
+                <div class="col-4 cell" onclick="placeMark(0, 1)"></div>
+                <div class="col-4 cell" onclick="placeMark(0, 2)"></div>
+            </div>
+            <div class="row">
+                <div class="col-4 cell" onclick="placeMark(1, 0)"></div>
+                <div class="col-4 cell" onclick="placeMark(1, 1)"></div>
+                <div class="col-4 cell" onclick="placeMark(1, 2)"></div>
+            </div>
+            <div class="row">
+                <div class="col-4 cell" onclick="placeMark(2, 0)"></div>
+                <div class="col-4 cell" onclick="placeMark(2, 1)"></div>
+                <div class="col-4 cell" onclick="placeMark(2, 2)"></div>
+            </div>
+        </div>
+        <div id="result" class="mt-3"></div>
+        <br>
+        <button class="btn btn-warning col-1 mt-3 mx-auto" onclick="stopmusic()">Stop Music</button>
+        <button class="btn btn-success col-1 mt-3 mx-auto" onclick="playmusic()">Play Music</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

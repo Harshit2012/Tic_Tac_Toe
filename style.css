@@ -1,0 +1,55 @@
+body {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 400px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+#game-container {
+    display: inline-block;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.cell {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #007bff;
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #e6f7ff;
+}
+
+#result {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+#restart-button {
+    display: none;
+}
